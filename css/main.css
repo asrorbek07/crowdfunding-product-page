@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Commissioner-Regular";
+    font-family: "Commissioner";
     src: url("../fonts/Commissioner-Regular.woff2") format("woff2"),
         url("../fonts/Commissioner-Regular.woff") format("woff");
     font-weight: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: "Commissioner-Medium";
+    font-family: "Commissioner";
     src: url("../fonts/Commissioner-Medium.woff2") format("woff2"),
         url("../fonts/Commissioner-Medium.woff") format("woff");
     font-weight: 500;
@@ -17,11 +17,80 @@
 }
 
 @font-face {
-    font-family: "Commissioner-Bold";
+    font-family: "Commissioner";
     src: url("../fonts/Commissioner-Bold.woff2") format("woff2"),
         url("../fonts/Commissioner-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+}
+html{
+    box-sizing: border-box;
+}
+*
+*::after, *::before{
+    box-sizing: inherit;
+}
+:root{
+    --Moderate-cyan: hsl(176, 50%, 47%);
+    --Dark-cyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-gray: hsl(0, 0%, 48%);
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family:"Commissioner", "Arial", sans-serif ;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--Dark-gray);
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sitenav{
+    padding-top: 48px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
+    opacity: .6;
+    font-weight: 500px;
+    
+    
+}
+.sitenav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container{
+    max-width: 1150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sitenav-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.sitenav-item{
+    margin-left: 33px;
+}
+.sitenav-link{
+    text-decoration: none;
+    color: white;
+    height: 16px;
+    font-size: 13px;
+    line-height: 16px;
+
+}
+.sitenav-link:hover{
+    text-decoration: underline;
 }
 
