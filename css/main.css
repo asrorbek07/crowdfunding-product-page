@@ -36,6 +36,7 @@ html{
     --Dark-cyan: hsl(176, 72%, 28%);
     --Black: hsl(0, 0%, 0%);
     --Dark-gray: hsl(0, 0%, 48%);
+    --site-fon:hsl(0, 0%, 95%);
 }
 body{
     padding: 0;
@@ -44,6 +45,7 @@ body{
     font-size: 16px;
     line-height: 30px;
     color: var(--Dark-gray);
+    background-color: var(--site-fon);
 }
 img{
     max-width: 100%;
@@ -105,6 +107,10 @@ img{
 .content-hero-wrapper{
     display: flex;
     justify-content: center;
+}
+.content-page-container{
+    width: 770px;
+    
 }
 
 
