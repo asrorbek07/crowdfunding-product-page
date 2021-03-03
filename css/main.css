@@ -104,6 +104,13 @@ img{
     text-decoration: underline;
 }
 /* MAIN */
+.card{
+    border-radius: 8px;
+    padding: 48px;
+    background-color: white;
+    margin-bottom: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.0497193);
+}
 .content-hero-wrapper{
     display: flex;
     justify-content: center;
@@ -111,6 +118,10 @@ img{
 .content-page-container{
     width: 770px;
     
+}
+.content-img-hero{
+    height: 400px;
+    object-fit: cover;
 }
 
 
