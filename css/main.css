@@ -33,8 +33,10 @@ html{
 }
 :root{
     --Moderate-cyan: #3cb4ac0d;
-    --Dark-cyan: #147a73;
+    --Dark-cyan: #3CB3AB;
+     --Dark-cyan-hover: #147a73;
     --Black: #000000;
+    --Black-opasity: #00000026;
     --Dark-gray:#7a7a7a;
     --opack-gray:#7a7a7a0d;
     --site-fon:#f2f2f2;
@@ -166,11 +168,11 @@ margin-bottom: 15px;
     font-weight: bold;
 }
 .button-back{
-    background-color: var(--Moderate-cyan);
+    background-color: var(--Dark-cyan);
     color: white;
 }
 .button-back:hover{
-    background-color: var(--Dark-cyan);
+    background-color: var(--Dark-cyan-hover);
 }
 .button-bookmark{
     background-color: var(--opack-gray);
@@ -182,5 +184,63 @@ margin-bottom: 15px;
     color: var(--Dark-cyan);
     background-color: var(--Moderate-cyan);
    
+
+}
+.statis{
+    display: flex;
+    
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.statis-data{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--Black);
+    margin-bottom: 8px;
+    margin-top: 0;
+    padding: 0;
+
+}
+.stats-text{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+
+}
+.stats-item1{
+    width: 140px;
+    padding-right: 40px;
+}
+.stats-item2{
+    border-left:1px solid var(--Black-opasity);
+    width: 90px;
+    padding-right: 90px;
+    padding-left: 47px;
+}
+.stats-item3{
+    width: 60px;
+    padding-left: 47px;
+    border-left:1px solid var(--Black-opasity);
+}
+.statis-model{
+   
+ width: 100%;
+    height: 12px;
+    border-radius: 33.5px;
+    background-color: var(--opack-gray);
+    padding: 0;
+    margin-bottom: 0;
+    margin-top:37px;
+}
+.statis-amount{
+    width: 80%;
+    height: 12px;
+    border-radius: 33.5px;
+    background-color: var(--Dark-cyan);
 
 }
